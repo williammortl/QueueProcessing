@@ -23,7 +23,7 @@ Can you create a Dockerfile for projects/random_number_generator that has enviro
 -broker
 -metrics port
 
-that then map to the random_number_generator executable when the container runs
+that then map to the random_number_generator executable when the container runs, also make sure that the metrics port is opened for the container
 
 please add a "dockerize" task to the makefile
 

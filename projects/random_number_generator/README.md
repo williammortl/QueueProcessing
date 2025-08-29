@@ -68,6 +68,19 @@ docker run --rm \
 	-topic my_topic
 ```
 
+	3) Custom metrics port (e.g., 9100)
+
+	```zsh
+	docker run --rm \
+		-e THREADS=2 \
+		-e PAUSE=1 \
+		-e METRICS_PORT=9100 \
+		-p 9100:9100 \
+		random-number-generator:latest \
+		-demo
+	```
+
 Notes:
 - The image entrypoint maps env vars to flags and forwards any additional arguments, so you can pass flags like `-topic`, `-demo`, or `-kconfig` directly after the image name.
 - Metrics are exposed on `:$METRICS_PORT` inside the container; publish that port with `-p` to access from the host.
+	- The Dockerfile declares `EXPOSE 2112` (default metrics port). This is informational; if you change `METRICS_PORT` at runtime, also adjust your `-p` mapping to the same port.
