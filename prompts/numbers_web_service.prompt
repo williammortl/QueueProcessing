@@ -1,0 +1,22 @@
+I want a web service that uses Spring Boot, Java 24 that uses the Gradle 9.0.0 build tool to build. I also want it to expose a Swagger endpoint for the service.
+
+I want the service to log web service startup and shutdown as well as every connection (and what verb and endpoint that is called) that is made to it using Prometheus.
+
+This web service should store the N most recent numbers it receives, and also keep a running average for all of the numbers.
+
+I want to pass the port number for the service and port number for prometheus as parameters on the command line. I also want to pass a number N that is the total numbers that the service stores in memory. Print the using statement for the service if the parameters are not passed.
+
+The server should store one the N most recent numbers sent to it. It can also return the average of all the numbers.
+
+I want the following REST endpoints:
+
+GET /numbers - returns the 100 most recent numbers that it has received as an array in JSON: {"numbers":[1, 2, ..., 100th number]}, obviously if there are not 100 numbers in memory, you return all that are currently stored
+GET /average - returns the average of the 100 most recent numbers as JSON {"average": the average of the numbers stored}
+GET /ping - used for a heartbeat, returns JSON as follows: {"msg":"pong!", "time": "{insert the current date and time here}"}
+GET /number/{N} - should return the Nth number stored in the following JSON {"index": N, "number": the Nth number}... if there isn't an NMth number yet, should return a 404 http code.
+PUT /numbers - can accept an array of numbers and replaces the oldest M numbers currently stored in memory with the new numbers. Numbers are passed in the JSON as {"numbers": [1, ..., M]}
+
+the root directory for this project should be projects/numbers_web_service - please put ALL files in that directory or a subdirectory rooted in projects/numbers_web_service.
+
+The output should be an executable JAR file.
+
