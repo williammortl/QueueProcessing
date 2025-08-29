@@ -2,6 +2,8 @@ Create a multithreaded service in golang that writes random numbers between 1 an
 
 Accept any Kafka queue configuration as a parameter passed on the command line. Additionally, make the number of threads that write to a Kafka queue configurable, allow the number to be passed via the command line. Also make the pause time for threads configurable (in seconds) and have it be passed on the command line.
 
+Create a flag named "demo" that if passed all Kafka command line parameters are ignored (and optional in this case) and then threads print the random numbers to the console instead. They should printed in the following format: {thread number} : {random value}
+
 If the application is executed without enough configuration parameters, print a using statement.
 
 Please implement prometheus logging. As part of logging, log the startup parameters as well as when it started. Log when each thread starts and when it completes (ends). Log the time of service shutdown. Keep a counter of how many numbers have been written to Kafka.
