@@ -13,3 +13,18 @@ Create a Makefile for building the service.
 Please put ALL files (including Makefile, go.mod, and go.sum) for this service in the projects/random_number_service subdirectory. Put any Go source code in the projects/random_number_service/src subdirectory. 
 
 The classpath for the class files for the service should be com.williammortl.numbers_web_service.
+
+-----------
+
+Can you create a Dockerfile for projects/random_number_generator that has environment variables for:
+
+-threads
+-pause
+-broker
+-metrics port
+
+that then map to the random_number_generator executable when the container runs
+
+please add a "dockerize" task to the makefile
+
+update the README.md file to explain how to run the dockerfile.
