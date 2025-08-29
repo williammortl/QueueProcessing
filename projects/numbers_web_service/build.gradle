@@ -3,7 +3,7 @@ plugins {
     id 'org.springframework.boot' version '3.4.2'
 }
 
-group = 'com.example.numbers'
+group = 'com.williammortl.numbers_web_service'
 version = '0.1.0'
 
 java {
@@ -32,7 +32,7 @@ tasks.withType(Test).configureEach {
 
 bootJar {
     archiveBaseName = 'numbers-web-service'
-    mainClass = 'com.example.numbers.NumbersWebServiceApplication'
+    mainClass = 'com.williammortl.numbers_web_service.NumbersWebServiceApplication'
 }
 
 jar {
@@ -40,5 +40,5 @@ jar {
 }
 
 springBoot {
-    mainClass = 'com.example.numbers.NumbersWebServiceApplication'
+    mainClass = 'com.williammortl.numbers_web_service.NumbersWebServiceApplication'
 }

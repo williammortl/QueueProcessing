@@ -10,4 +10,6 @@ Please implement prometheus logging. As part of logging, log the startup paramet
 
 Create a Makefile for building the service.
 
-Please put ALL files (including Makefile, go.mod, and go.sum) for this service in the projects/random_number_service subdirectory. Put any Go source code in the projects/random_number_service/src subdirectory.
+Please put ALL files (including Makefile, go.mod, and go.sum) for this service in the projects/random_number_service subdirectory. Put any Go source code in the projects/random_number_service/src subdirectory. 
+
+The classpath for the class files for the service should be com.williammortl.numbers_web_service.

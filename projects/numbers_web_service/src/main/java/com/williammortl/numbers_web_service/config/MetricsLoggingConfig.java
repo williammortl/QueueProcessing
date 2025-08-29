@@ -1,4 +1,4 @@
-package com.example.numbers.config;
+package com.williammortl.numbers_web_service.config;
 
 import io.micrometer.core.instrument.Counter;
 import io.micrometer.core.instrument.MeterRegistry;

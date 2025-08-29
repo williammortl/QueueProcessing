@@ -1,6 +1,6 @@
-package com.example.numbers.web;
+package com.williammortl.numbers_web_service.web;
 
-import com.example.numbers.service.NumbersStore;
+import com.williammortl.numbers_web_service.service.NumbersStore;
 import io.swagger.v3.oas.annotations.Operation;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,4 +1,4 @@
-package com.example.numbers.service;
+package com.williammortl.numbers_web_service.service;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;

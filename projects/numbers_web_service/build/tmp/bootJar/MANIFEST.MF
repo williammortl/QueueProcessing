@@ -1,6 +1,7 @@
 Manifest-Version: 1.0
 Main-Class: org.springframework.boot.loader.launch.JarLauncher
-Start-Class: com.example.numbers.NumbersWebServiceApplication
+Start-Class: com.williammortl.numbers_web_service.NumbersWebServiceAppli
+ cation
 Spring-Boot-Version: 3.4.2
 Spring-Boot-Classes: BOOT-INF/classes/
 Spring-Boot-Lib: BOOT-INF/lib/

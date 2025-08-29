@@ -1,4 +1,4 @@
-package com.example.numbers.config;
+package com.williammortl.numbers_web_service.config;
 
 import jakarta.annotation.PostConstruct;
 import org.slf4j.Logger;
@@ -35,7 +35,6 @@ public class StartupConfig {
             throw new IllegalArgumentException("Missing required parameters");
         }
 
-        // Apply ports via properties (server.port and management.server.port)
         env.getSystemProperties().put("server.port", String.valueOf(httpPort));
         env.getSystemProperties().put("management.server.port", String.valueOf(metricsPort));
         env.getSystemProperties().put("numbers.n", String.valueOf(cap));

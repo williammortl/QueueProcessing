@@ -1,4 +1,4 @@
-package com.example.numbers;
+package com.williammortl.numbers_web_service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,7 +10,6 @@ import java.util.Properties;
 @SpringBootApplication
 public class NumbersWebServiceApplication {
     public static void main(String[] args) {
-        // Parse minimal args before boot
         Integer http = getIntArg(args, "--port=");
         Integer metrics = getIntArg(args, "--metrics=");
         Integer cap = getIntArg(args, "--n=");
