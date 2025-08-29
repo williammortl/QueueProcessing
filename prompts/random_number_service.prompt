@@ -1,0 +1,11 @@
+Create a multithreaded service in golang that writes random numbers between 1 and 10,000 to a Kafka queue. Have each thread write to the queue and then pause for X seconds.
+
+Accept any Kafka queue configuration as a parameter passed on the command line. Additionally, make the number of threads that write to a Kafka queue configurable, allow the number to be passed via the command line. Also make the pause time for threads configurable (in seconds) and have it be passed on the command line.
+
+If the application is executed without enough configuration parameters, print a using statement.
+
+Please implement prometheus logging. As part of logging, log the startup parameters as well as when it started. Log when each thread starts and when it completes (ends). Log the time of service shutdown. Keep a counter of how many numbers have been written to Kafka.
+
+Create a Makefile for building the service.
+
+Please put ALL files (including Makefile, go.mod, and go.sum) for this service in the projects/random_number_service subdirectory. Put any Go source code in the projects/random_number_service/src subdirectory.
